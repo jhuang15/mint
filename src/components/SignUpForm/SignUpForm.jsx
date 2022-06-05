@@ -1,5 +1,6 @@
-import { Component } from 'react';
+import React, { Component } from 'react';
 import { signUp } from '../../utilities/users-service';
+
 
 export default class SignUpForm extends Component {
   state = {
@@ -39,10 +40,16 @@ export default class SignUpForm extends Component {
 
   render() {
     const disable = this.state.password !== this.state.confirm;
+
     return (
-      <div>
-        <div className="form-container">
+
+    <div id="modalOne" className="modal">
+      <div className="modal-content">
+        <div className="contact-form">
+          <a className="close">X</a>
           <form autoComplete="off" onSubmit={this.handleSubmit}>
+            <h2>Sign Up</h2>
+            <div>
             <label>Name</label>
             <input type="text" name="name" value={this.state.name} onChange={this.handleChange} required />
             <label>Email</label>
@@ -51,11 +58,13 @@ export default class SignUpForm extends Component {
             <input type="password" name="password" value={this.state.password} onChange={this.handleChange} required />
             <label>Confirm</label>
             <input type="password" name="confirm" value={this.state.confirm} onChange={this.handleChange} required />
+            </div>
             <button type="submit" disabled={disable}>SIGN UP</button>
           </form>
         </div>
         <p className="error-message">&nbsp;{this.state.error}</p>
       </div>
+    </div> 
     );
   }
 }
