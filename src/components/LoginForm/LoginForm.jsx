@@ -33,19 +33,19 @@ export default function LoginForm({ setUser }) {
     <div id="modalTwo" className="modal">
       <div className="modal-content">
         <div className="contact-form">
-          <span className="close">X</span>
+          <span className="close">&otimes;</span>
           <form autoComplete="off" onSubmit={handleSubmit}>
-            <h2>Log In</h2>
+            <h2>Log In to Mint</h2>
             <div>
-            <label>Email</label>
-            <input type="text" name="email" value={credentials.email} onChange={handleChange} required />
-            <label>Password</label>
-            <input type="password" name="password" value={credentials.password} onChange={handleChange} required />
+            <input type="text" name="email" placeholder="Email" value={credentials.email} onChange={handleChange} required />
+            <input type="password" name="password" placeholder="Password" value={credentials.password} onChange={handleChange} required />
             </div>
-            <button type="submit">Log In</button>
+            <button className="submit-btn" type="submit">Log In</button>
+
           </form>
+          <p>Not a member? <a href="">Sign Up</a>!</p>
+            <p className="error-message">&nbsp;{error}</p>
         </div>
-        <p className="error-message">&nbsp;{error}</p>
       </div>
     </div>
   );

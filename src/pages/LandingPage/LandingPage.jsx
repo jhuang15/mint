@@ -4,15 +4,15 @@ import LoginForm from '../../components/LoginForm/LoginForm';
 
 export default function LandingPage({ setUser }) {
 
-  let modalBtns = [...document.querySelectorAll(".button")];
+  const modalBtns = [...document.querySelectorAll(".button")];
       modalBtns.forEach(function (btn) {
         btn.onclick = function () {
-          console.log("btn clicked");
+          console.log("btn clicked!");
           let modal = btn.getAttribute("data-modal");
           document.getElementById(modal).style.display = "block";
         };
       });
-  let closeBtns = [...document.querySelectorAll(".close")];
+  const closeBtns = [...document.querySelectorAll(".close")];
     closeBtns.forEach(function (btn) {
         btn.onclick = function () {
           let modal = btn.closest(".modal");

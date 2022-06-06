@@ -23,7 +23,7 @@ export default class SignUpForm extends Component {
       const user = await signUp(formData);
       // Update user state with user
       this.props.setUser(user);
-    } catch {
+    } catch{ 
       // Invalid signup
       this.setState({
         error: 'Sign Up Failed - Try Again'
@@ -46,23 +46,23 @@ export default class SignUpForm extends Component {
     <div id="modalOne" className="modal">
       <div className="modal-content">
         <div className="contact-form">
-          <a className="close">X</a>
+          <a className="close">&otimes;</a>
           <form autoComplete="off" onSubmit={this.handleSubmit}>
-            <h2>Sign Up</h2>
+            <h2>Your wedding planning starts now!</h2>
             <div>
-            <label>Name</label>
-            <input type="text" name="name" value={this.state.name} onChange={this.handleChange} required />
-            <label>Email</label>
-            <input type="email" name="email" value={this.state.email} onChange={this.handleChange} required />
-            <label>Password</label>
-            <input type="password" name="password" value={this.state.password} onChange={this.handleChange} required />
-            <label>Confirm</label>
-            <input type="password" name="confirm" value={this.state.confirm} onChange={this.handleChange} required />
+            <input type="text" name="name" placeholder="Name" value={this.state.name} onChange={this.handleChange} required />
+            <input type="email" name="email" placeholder="Email" value={this.state.email} onChange={this.handleChange} required />
+            <input type="password" name="password" placeholder="Password" value={this.state.password} onChange={this.handleChange} required />
+            <input type="password" name="confirm" placeholder="Confirm Password" value={this.state.confirm} onChange={this.handleChange} required />
             </div>
-            <button type="submit" disabled={disable}>SIGN UP</button>
+            <p>By clicking 'Sign Up', I agree to Mint's  Privacy Policy and Terms of Use. I understand Mint may share my information with partners as described here.</p>
+            <button className="submit-btn" type="submit" disabled={disable}>Sign Up</button>
+
+            
           </form>
+          <p>Already a member? <a href="">Log In</a></p>
+            <p className="error-message">&nbsp;{this.state.error}</p>
         </div>
-        <p className="error-message">&nbsp;{this.state.error}</p>
       </div>
     </div> 
     );

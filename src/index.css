@@ -59,28 +59,32 @@ span {
 form {
   padding: 25px;
   margin: 25px;
-  box-shadow: 0 2px 5px #f5f5f5;
-  background: #eee;
+  box-shadow: 0 2px 5px #bdbdbd;
+  background-color: white;
+  border-radius: 15px;
 }
-input,
-textarea {
+input {
   width: 90%;
   padding: 10px;
   margin-bottom: 20px;
-  border: 1px solid #1c87c9;
+  border: 1px solid pink;
+  border-radius: 15px;
   outline: none;
+  font-size: 16px;
 }
-.contact-form button {
+.submit-btn {
   width: 100%;
   padding: 10px;
-  border: none;
-  background: #1c87c9;
+  border: 1px solid pink;
+  border-radius: 15px;
+  background-color: pink;
   font-size: 16px;
-  font-weight: 400;
-  color: #fff;
+  color: white;
 }
 button:hover {
-  background: #2371a0;
+  background-color: white;
+  color: rgb(41, 41, 41);
+  border: 1px solid rgb(255, 144, 162);
 }
 .close {
   color: #aaa;
