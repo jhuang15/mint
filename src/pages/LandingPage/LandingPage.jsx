@@ -2,7 +2,7 @@
 import SignUpForm from '../../components/SignUpForm/SignUpForm';
 import LoginForm from '../../components/LoginForm/LoginForm';
 
-export default function AuthPage({ setUser }) {
+export default function LandingPage({ setUser }) {
   //const [showSignUp, setShowSignUp] = useState(false);
 
   let modalBtns = [...document.querySelectorAll(".button")];
@@ -12,7 +12,7 @@ export default function AuthPage({ setUser }) {
           document.getElementById(modal).style.display = "block";
         };
       });
-      let closeBtns = [...document.querySelectorAll(".close")];
+  let closeBtns = [...document.querySelectorAll(".close")];
       closeBtns.forEach(function (btn) {
         btn.onclick = function () {
           let modal = btn.closest(".modal");
@@ -27,9 +27,9 @@ export default function AuthPage({ setUser }) {
   return (
     <main>
       <button className="button" data-modal="modalOne">Sign Up</button>
-      <SignUpForm setUser={setUser}/>
+      <SignUpForm setUser={setUser} />
       <button className="button" data-modal="modalTwo">Log In</button>
-      <LoginForm setUser={setUser}/>
+      <LoginForm setUser={setUser} />
 
     </main>
   );
