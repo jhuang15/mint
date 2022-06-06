@@ -10,7 +10,7 @@ export default function DashboardPage() {
   const [user, setUser] = useState(getUser());
 
   return (
-    <>
+    <main>
       <NavBar user={user} setUser={setUser} />
         <Routes>
           {/* Route components in here */}
@@ -20,6 +20,6 @@ export default function DashboardPage() {
     
     <h1>Dashboard Page</h1>
     <p>this is the page logging in redirects to </p>
-    </>
+    </main>
   );
 }
