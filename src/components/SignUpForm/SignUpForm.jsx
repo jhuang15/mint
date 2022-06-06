@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { signUp } from '../../utilities/users-service';
 
-
 export default class SignUpForm extends Component {
   state = {
     name: '',
@@ -57,11 +56,11 @@ export default class SignUpForm extends Component {
             </div>
             <p>By clicking 'Sign Up', I agree to Mint's  Privacy Policy and Terms of Use. I understand Mint may share my information with partners as described here.</p>
             <button className="submit-btn" type="submit" disabled={disable}>Sign Up</button>
-
-            
           </form>
-          <p>Already a member? <a href="">Log In</a></p>
             <p className="error-message">&nbsp;{this.state.error}</p>
+            <p>Already a member? </p>
+            
+            
         </div>
       </div>
     </div> 

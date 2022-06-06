@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import * as usersService from '../../utilities/users-service';
+
+import SignUpForm from '../../components/SignUpForm/SignUpForm';
 //css is in index.css
 
 export default function LoginForm({ setUser }) {
@@ -43,8 +45,10 @@ export default function LoginForm({ setUser }) {
             <button className="submit-btn" type="submit">Log In</button>
 
           </form>
-          <p>Not a member? <a href="">Sign Up</a>!</p>
             <p className="error-message">&nbsp;{error}</p>
+            <p>Not a member? 
+            <button className="button" id="signup-btn" data-modal="modalOne">Sign Up</button> </p>
+            <SignUpForm setUser={setUser} />
         </div>
       </div>
     </div>

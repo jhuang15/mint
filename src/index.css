@@ -41,6 +41,9 @@
   background-color: rgba(0, 0, 0, 0.4);
 }
 .modal-content {
+  box-shadow: 0 2px 5px #bdbdbd;
+  background-color: white;
+  border-radius: 15px;
   margin: 50px auto;
   border: 1px solid #999;
   width: 60%;
@@ -59,9 +62,7 @@ span {
 form {
   padding: 25px;
   margin: 25px;
-  box-shadow: 0 2px 5px #bdbdbd;
   background-color: white;
-  border-radius: 15px;
 }
 input {
   width: 90%;
@@ -134,6 +135,7 @@ button:hover {
 }
 .navbar-nav {
   padding: 20px;
+  border-bottom: 1px solid blue;
 }
 .nav-div {
   display: flex;

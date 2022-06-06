@@ -14,9 +14,9 @@ export default function NavBar({ user, setUser }) {
     <nav className="navbar-nav">
       <div className="nav-div">
       <div className="nav-div-left">
-      <Link to="/orders" className="nav-link">Dashboard</Link>
-      <Link to="/orders/new" className="nav-link">Wedding Website</Link>
-      <Link to="/orders/new" className="nav-link">Invitations</Link>
+      <Link to="/" className="nav-link">Dashboard</Link>
+      <Link to="/wedding-website/" className="nav-link">Wedding Website</Link>
+      <Link to="/invitations" className="nav-link">Invitations</Link>
       </div>
       <div className="nav-div-right">
       <p className="nav-welcome">Welcome, {user.name}</p>
