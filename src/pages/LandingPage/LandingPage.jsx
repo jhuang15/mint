@@ -1,29 +1,34 @@
 //import { useState } from 'react';
 import SignUpForm from '../../components/SignUpForm/SignUpForm';
 import LoginForm from '../../components/LoginForm/LoginForm';
+import { useEffect } from 'react';
 
 export default function LandingPage({ setUser }) {
 
-  const modalBtns = [...document.querySelectorAll(".button")];
-      modalBtns.forEach(function (btn) {
+  useEffect (function () {
+    const modalBtns = document.querySelectorAll(".button");
+    const closeBtns = document.querySelectorAll(".close");
+
+    modalBtns.forEach(function (btn) {
+      btn.onclick = function () {
+        let modal = btn.getAttribute("data-modal");
+        document.getElementById(modal).style.display = "block";
+      };
+      closeBtns.forEach(function (btn) {
         btn.onclick = function () {
-          console.log("btn clicked!");
-          let modal = btn.getAttribute("data-modal");
-          document.getElementById(modal).style.display = "block";
-        };
-      });
-  const closeBtns = [...document.querySelectorAll(".close")];
-    closeBtns.forEach(function (btn) {
-        btn.onclick = function () {
-          let modal = btn.closest(".modal");
+         let modal = btn.closest(".modal");
           modal.style.display = "none";
         };
       });
-      window.onclick = function (event) {
+      //close model anywhere outside of it
+      window.onclick = function (event) { 
         if (event.target.className === "modal") {
           event.target.style.display = "none";
         }
       };
+    });
+  },[]); 
+
   return (
     <main>
       <div className="btn-div">
