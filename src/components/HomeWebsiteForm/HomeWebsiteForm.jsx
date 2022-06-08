@@ -5,16 +5,21 @@ export default class HomeWebsiteForm extends Component {
     constructor(props) {
       super(props)
       this.state = {
-        name1: '',
-        name2: '',
-        date: '',
-        location: '',
-        story: ''
+        formValues: [{
+          name1: '',
+          name2: '',
+          date: '',
+          location: '',
+          story: '',
+          photos: '',
+          invite: ''
+        }]
+        
       };
     }
     handleSubmit = async (evt) => {
       evt.preventDefault();
-      //alert('A name was submitted: ' + this.state.name1);
+      alert('A name was submitted: ' + this.state.name1);
       
     }
     handleChange = (evt) => {
@@ -53,6 +58,7 @@ export default class HomeWebsiteForm extends Component {
         <div className="website-rsvp">
           <h3>RSVP</h3>
           <p>This will show the user the guest list: accept/decline. Will nto be displayed to guests</p>
+          <input type="text" value={this.state.invite} onChange={this.handleChange} placeholder="Name of guest" />
         </div>
         
       </form>
