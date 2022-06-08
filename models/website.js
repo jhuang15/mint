@@ -4,8 +4,7 @@ const Schema = mongoose.Schema;
 const inviteSchema = new Schema(
   {
     content: {
-      type: String,
-      match: /.{5,}/,
+      type: String
     },
     user: { type: Schema.Types.ObjectId, ref: "User", required: true },
     userName: String,
@@ -25,7 +24,7 @@ const websiteSchema = new Schema(
       type: String,
     },
     photos: {
-      type: Number,
+      type: String,
     },
     rsvp: [inviteSchema],
   },
