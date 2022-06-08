@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { getUser } from '../../utilities/users-service';
-import InvitePage from '../InvitePage/InvitePage';
+import GuestListPage from '../GuestListPage/GuestListPage';
 import WebsitePage from '../WebsitePage/WebsitePage';
 import NavBar from '../../components/NavBar/NavBar';
 

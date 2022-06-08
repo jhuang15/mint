@@ -2,9 +2,10 @@ import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { getUser } from '../../utilities/users-service';
 import LandingPage from '../LandingPage/LandingPage';
-import InvitePage from '../InvitePage/InvitePage';
+import GuestListPage from '../GuestListPage/GuestListPage';
 import DashboardPage from '../DashboardPage/DashboardPage';
 import WebsitePage from '../WebsitePage/WebsitePage';
+import PreviewWebsitePage from '../PreviewWebsitePage/PreviewWebsitePage';
 import NavBar from '../../components/NavBar/NavBar';
 import './App.css';
 
@@ -20,7 +21,8 @@ function App() {
           {/* Route components in here */}
           <Route path="/" element={<DashboardPage user={user} setUser={setUser}/>} />
           <Route path="/wedding-website" element={<WebsitePage />} />
-          <Route path="/invitations" element={<InvitePage />} />
+          <Route path="/preview-website" element={<PreviewWebsitePage />} />
+          <Route path="/guest-list" element={<GuestListPage />} />
         </Routes>
         </>
         :
