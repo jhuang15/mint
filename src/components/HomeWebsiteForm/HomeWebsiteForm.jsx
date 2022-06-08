@@ -14,7 +14,8 @@ export default class HomeWebsiteForm extends Component {
     }
     handleSubmit = async (evt) => {
       evt.preventDefault();
-      alert('A name was submitted: ' + this.state.name1);
+      //alert('A name was submitted: ' + this.state.name1);
+      
     }
     handleChange = (evt) => {
       this.setState({
