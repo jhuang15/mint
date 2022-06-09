@@ -168,6 +168,11 @@ button:hover {
   color:black;
   border-bottom: 2px solid pink;
 }
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
 .website-form-container {
   border: 1px solid red;
 }
@@ -196,3 +201,8 @@ button:hover {
   margin: 5px;
 }
 
+@media screen and (max-width: 100vmin) {
+  .container {
+    flex-direction: column;
+  }
+}

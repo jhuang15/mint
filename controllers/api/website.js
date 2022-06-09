@@ -17,7 +17,7 @@ function update(req, res) {
     function (err, website) {
       console.log(err);
       website.story = req.body.story;
-      website.invites = req.body.invites;
+      website.invite = req.body.invite;
       website.save(function (err) {
         res.redirect(`/websites/${website._id}`);
       });

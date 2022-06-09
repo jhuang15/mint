@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import * as websiteAPI from '../../utilities/website-api'
+import * as websiteAPI from '../../utilities/website-api';
+import PreviewWebsitePage from '../../pages/PreviewWebsitePage/PreviewWebsitePage';
+import { Link } from 'react-router-dom';
 
   export default function HomeWebsiteForm({ setWebsite }) {
     const [formData, setFormData] = useState ({
@@ -27,6 +29,7 @@ import * as websiteAPI from '../../utilities/website-api'
     }
 
     return (
+      <div className="container">
       <div className="website-form-container">
       <form onSubmit={handleSubmit}>
         <button className="submit-btn" type="submit" >Save</button>
@@ -51,14 +54,18 @@ import * as websiteAPI from '../../utilities/website-api'
         <div className="website-rsvp" >
           <h3>RSVP</h3>
           <p>This will show the user the guest list: accept/decline. Will nto be displayed to guests</p>
-
           <div className="add-invite-input" >
-           <input type="text" name="invite" value={formData.invite} onChange={handleChange} placeholder="Name of guest" />
-           
+           <input type="text" name="invite" value={formData.invite} onChange={handleChange} placeholder="Name of guest" /> 
           </div>
-        
         </div>
+
       </form>
       </div>
+      <div className='preview-container'>
+        <PreviewWebsitePage formData={formData} />
+      </div>
+      
+      </div>
+      
     );
   }

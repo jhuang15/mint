@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 
 const inviteSchema = new Schema(
   {
-    rsvp: {
+    invite: {
       type: String
     },
     user: { type: Schema.Types.ObjectId, ref: "User", required: true },
