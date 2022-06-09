@@ -1,9 +1,34 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
+const inviteSchema = new Schema(
+  {
+    rsvp: {
+      type: String
+    },
+    user: { type: Schema.Types.ObjectId, ref: "User", required: true },
+    userName: String,
+  },
+  {
+    timestamps: true,
+  }
+);
+
 const websiteSchema = new Schema(
   {
-    home: {
+    name1: {
+      type: String,
+      required: true,
+    },
+    name2: {
+      type: String,
+      required: true,
+    },
+    date: {
+      type: String,
+      required: true,
+    },
+    location: {
       type: String,
       required: true,
     },
@@ -14,6 +39,7 @@ const websiteSchema = new Schema(
       type: String,
     },
     rsvp: [inviteSchema],
+    user: {type:Schema.Types.ObjectId, ref:"User"}
   },
   {
     timestamps: true,

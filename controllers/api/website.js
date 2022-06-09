@@ -1,4 +1,4 @@
-const Website = require("../models/website");
+const Website = require("../../models/website");
 
 module.exports = {
   index,
@@ -6,7 +6,7 @@ module.exports = {
   new: newSite,
   create,
   delete: deleteSite,
-  update,
+  update
 };
 
 function update(req, res) {
@@ -16,8 +16,7 @@ function update(req, res) {
     { new: true },
     function (err, website) {
       console.log(err);
-      website.price = req.body.price;
-      website.quantity = req.body.quantity;
+      website.story = req.body.story;
       website.invites = req.body.invites;
       website.save(function (err) {
         res.redirect(`/websites/${website._id}`);
@@ -45,13 +44,11 @@ function show(req, res) {
   });
 }
 
-function create(req, res) {
+async function create(req, res) {
+  //req.body.user = req.user._id
   var website = new Website(req.body);
-  website.save(function (err) {
-    if (err) return console.log("Error" + website);
-    console.log("Created:" + website);
-    res.redirect("websites");
-  });
+  await website.save()
+  console.log(website)
 }
 
 function newSite(req, res) {
