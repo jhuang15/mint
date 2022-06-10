@@ -5,8 +5,14 @@ const User = require('../../models/user');
 module.exports = {
   create,
   login,
-  checkToken
+  checkToken,
+  getProfile
 };
+
+async function getProfile(req, res) {
+  const user =  await User.findById(req.params.id)
+  res.send(user)
+}
 
 function checkToken(req, res) {
   console.log(req.user);

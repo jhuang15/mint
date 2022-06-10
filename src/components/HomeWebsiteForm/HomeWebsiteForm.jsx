@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import * as websiteAPI from '../../utilities/website-api';
-import PreviewWebsitePage from '../../pages/PreviewWebsitePage/PreviewWebsitePage';
-import { Link } from 'react-router-dom';
+import {  useNavigate } from "react-router-dom";
 
   export default function HomeWebsiteForm({ setWebsite }) {
+    const navigate = useNavigate();
     const [formData, setFormData] = useState ({
       name1: '',
       name2: '',
@@ -20,6 +20,7 @@ import { Link } from 'react-router-dom';
 
     async function handleSubmit(evt) {
       evt.preventDefault();
+      //navigate('/preview-website')
       try {
         const website = await websiteAPI.createWebsite(formData)
         setWebsite(website);
@@ -61,9 +62,9 @@ import { Link } from 'react-router-dom';
 
       </form>
       </div>
-      <div className='preview-container'>
-        <PreviewWebsitePage formData={formData} />
-      </div>
+      {/* <div className='preview-container'> */}
+      {/* x  <PreviewWebsitePage formData={formData} /> */}
+      {/* </div> */}
       
       </div>
       

@@ -1,56 +1,29 @@
 const Website = require("../../models/website");
 
 module.exports = {
-  index,
-  show,
-  new: newSite,
   create,
-  delete: deleteSite,
-  update
+  getAll,
+  delete: deleteWebsite
+
 };
 
-async function update(req, res) {
-  Website.findByIdAndUpdate(
-    req.params.id,
-    req.body.id,
-    { new: true },
-    function (err, website) {
-      console.log(err);
-      website.story = req.body.story;
-      website.invite = req.body.invite;
-      website.save(function (err) {
-        res.redirect(`/websites/${website._id}`);
-      });
-    }
-  );
+async function deleteWebsite(req, res) {
+  await Website.findOneAndDelete({
+    _id: req.params.id,
+    "website.user": req.user._id,
+  }); 
+  res.json('Deleted Weddingsite </3')
 }
 
-async function deleteSite(req, res) {
-  Website.findByIdAndDelete(req.params.id, function (err) {
-    res.redirect("/websites");
-  });
-}
-
-async function index(req, res) {
-  Website.find({}, function (err, websites) {
-    res.render("websites", { websites });
-  });
-}
-
-async function show(req, res) {
-  Website.findById(req.params.id, function (err, website) {
-    console.log(website);
-    res.render("websites/show", { website });
-  });
+async function getAll(req, res) {
+  const website = await Website.find({user: req.user._id});
+  res.json(website);
 }
 
 async function create(req, res) {
-  //req.body.user = req.user._id
-  var website = new Website(req.body);
-  await website.save()
-  console.log(website)
-}
-
-async function newSite(req, res) {
-  res.render("websites");
+  req.body.user = req.user._id
+  var newWebsite = new Website(req.body);
+  await newWebsite.save()
+  //console.log(website);
+  res.json(newWebsite);
 }

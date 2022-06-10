@@ -11,9 +11,6 @@ import './App.css';
 
 function App() {
   const [user, setUser] = useState(getUser());
-  const [invites, setInvites] = useState([]);
-  const [website, setWebsite] = useState([]);
-
  
 
   return (
