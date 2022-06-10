@@ -200,7 +200,11 @@ button:hover {
   padding: 10px;
   margin: 5px;
 }
-
+.preview-container {
+  background-color: #FAFAFA;
+  width: stretch;
+  margin-left: 5px
+}
 @media screen and (max-width: 100vmin) {
   .container {
     flex-direction: column;

@@ -9,7 +9,7 @@ module.exports = {
   update
 };
 
-function update(req, res) {
+async function update(req, res) {
   Website.findByIdAndUpdate(
     req.params.id,
     req.body.id,
@@ -25,19 +25,19 @@ function update(req, res) {
   );
 }
 
-function deleteSite(req, res) {
+async function deleteSite(req, res) {
   Website.findByIdAndDelete(req.params.id, function (err) {
     res.redirect("/websites");
   });
 }
 
-function index(req, res) {
+async function index(req, res) {
   Website.find({}, function (err, websites) {
     res.render("websites", { websites });
   });
 }
 
-function show(req, res) {
+async function show(req, res) {
   Website.findById(req.params.id, function (err, website) {
     console.log(website);
     res.render("websites/show", { website });
@@ -51,6 +51,6 @@ async function create(req, res) {
   console.log(website)
 }
 
-function newSite(req, res) {
+async function newSite(req, res) {
   res.render("websites");
 }

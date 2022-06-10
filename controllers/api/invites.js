@@ -5,7 +5,7 @@ module.exports = {
   delete: deleteInvite,
 };
 
-function deleteInvite(req, res) {
+async function deleteInvite(req, res) {
   Website.findOne({
     "invites._id": req.params.id,
     "invites.user": req.user._id,
@@ -23,7 +23,7 @@ function deleteInvite(req, res) {
   });
 }
 
-function create(req, res) {
+async function create(req, res) {
   Website.findById(req.params.id, function (err, website) {
     req.body.user = req.user._id;
     req.body.userName = req.user.name;

@@ -7,3 +7,10 @@ export function createWebsite(websiteData){
 export function getWebsite() {
     return sendRequest(BASE_URL)
 }
+
+// Add guest to invite list
+export function addGuestToInvite(guestId) {
+    // Just send itemId for best security (no pricing)
+    return sendRequest(`${BASE_URL}/invite/guests/${guestId}`, 'POST');
+  }
+  
