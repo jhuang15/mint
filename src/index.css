@@ -205,6 +205,22 @@ button:hover {
   width: stretch;
   margin-left: 5px
 }
+.dashboard-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  
+}
+.dashboard-checkbox {
+  width: 70vmin;
+  padding: 10px;
+  margin: 5px;
+}
+.dashboard-expense {
+  width: 70vmin;
+  padding: 10px;
+  margin: 5px;
+}
 @media screen and (max-width: 100vmin) {
   .container {
     flex-direction: column;
