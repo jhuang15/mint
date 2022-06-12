@@ -56,12 +56,9 @@ export default class SignUpForm extends Component {
             <input type="password" name="confirm" placeholder="Confirm Password" value={this.state.confirm} onChange={this.handleChange} required />
             </div>
             <p className="p-terms">By clicking 'Sign Up', I agree to Mint's  Privacy Policy and Terms of Use. I understand Mint may share my information with partners as described here.</p>
-            <button className="submit-btn" type="submit" disabled={disable}>Sign Up</button>
+            <button className="submit-btn" id="signup" type="submit" disabled={disable}>Sign Up</button>
           </form>
             <p className="error-message">&nbsp;{this.state.error}</p>
-            <p>Already a member? </p>
-            
-            
         </div>
       </div>
     </div> 

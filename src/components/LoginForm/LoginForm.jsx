@@ -46,9 +46,6 @@ export default function LoginForm({ setUser }) {
 
           </form>
             <p className="error-message">&nbsp;{error}</p>
-            <p>Not a member? 
-            <button className="button" id="signup-btn" data-modal="modalOne">Sign Up</button> </p>
-            <SignUpForm setUser={setUser} />
         </div>
       </div>
     </div>

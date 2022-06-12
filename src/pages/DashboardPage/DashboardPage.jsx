@@ -4,8 +4,6 @@ import { useState } from 'react'
 import './DashboardPage.css';
 
 export default function DashboardPage() {
-  const [list, setList] = React.useState(todoList);
-  const [name, setName] = React.useState('');
 
   const [checkedState, setCheckedState] = useState(
     new Array(todoList.length).fill(false)
@@ -18,15 +16,8 @@ export default function DashboardPage() {
     setCheckedState(updatedCheckedState);
   };
 
-  function handleChange(event) {
-    setName(event.target.value);
-  }
-  function handleAdd() {
-    const newList = list.concat({ name });
-    setList(newList);
-  }
-
   return (
+    <div className="background-img">
     <div className="dashboard-container">
       <div className="dashboard-checkbox">
       <div>
@@ -36,8 +27,9 @@ export default function DashboardPage() {
           return (
             <li key={index}>
               <div>
-                <div>
+                <div className="checkbox-row">
                   <input
+                  className="checkbox"
                     type="checkbox"
                     id={`custom-checkbox-${index}`}
                     name={name}
@@ -53,19 +45,12 @@ export default function DashboardPage() {
         })}
       </ul>
      </div>
-        <input type="text" value={name} onChange={handleChange} />
-        <button type="button" onClick={handleAdd}>
-          Add
-        </button>
       </div>
 
       <div className="dashboard-expense">
         <h2>Total up your expences</h2>
-
       </div>
-    
+    </div>
     </div>
   );
-
-  
 }
