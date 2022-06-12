@@ -40,7 +40,7 @@ export default function WebsiteCard({website, handleDelete}) {
       <main>
         
         <a href={`/profile/${website.user}`}>User: {website.user}</a>
-        <button onClick={() => handleDelete(website._id)}>DELETE WEBSITE</button>
+        <button onClick={() => handleDelete(website._id)}>Restart</button>
         <div className="img-div">
         <div className="preview-container">
         <h1 className="preview-h1">{website.name1} & {website.name2}</h1>

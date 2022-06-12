@@ -1,7 +1,10 @@
+main {
+  margin: 0vmin 10vmin 10vmin 10vmin;
+}
 .website-btn {
-  font-size: 20px;
-  border: none;
-  padding: 10px;
+  font-size: 18px;
+  border: 2px solid #ffffff;
+  padding: 15px;
   margin: 10px;
   background-color: #ffffff;
   color: #727272;
@@ -12,7 +15,7 @@
 }
 .story-div {
   align-self: center;
-  margin: 0vmin 20vmin 0vmin 20vmin;
+  
 }
 .img-div {
   background-color: #ffffff;
@@ -23,8 +26,6 @@
   position: relative;
   height: 100vmin;
   border-radius: 25px;
-  margin-left: 15vmin;
-  margin-right: 15vmin;
 }
 .preview-container {
   text-align: center;

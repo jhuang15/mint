@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import { getAll, deleteWebsite } from "../../utilities/website-api";
 import WebsiteCard from "../../pages/WebsiteCard/WebsiteCard";
-export default function PreviewWebsitePage() {
+import {  useNavigate } from "react-router-dom";
 
+export default function PreviewWebsitePage() {
+  const navigate = useNavigate();
   const [website, setWebsite] = useState([]);
   async function getWebsite() {
     const website = await getAll();
@@ -12,10 +14,12 @@ export default function PreviewWebsitePage() {
   useEffect(() => { 
     getWebsite();}, []);
 
-    function handleDelete(id) {
+    async function handleDelete(id) {
       deleteWebsite(id);
+      navigate('/wedding-website');
       const newWebsite = website.filter(function (website) {
         return website._id !== id;
+        
       });
       setWebsite(newWebsite);
     }
