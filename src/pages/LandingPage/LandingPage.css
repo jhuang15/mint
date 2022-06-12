@@ -1,0 +1,64 @@
+.btn-div {
+  display: flex;
+  justify-content: flex-end;
+  margin: 5px 20px 20px;
+}
+.button {
+  margin: 5px;
+  border-radius: 15%;
+  border: 1px solid pink;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+#signup-btn {
+  background-color: pink;
+  color: white;
+}
+#signup-btn:hover {
+  background-color: white;
+  color: rgb(41, 41, 41);
+  border: 1px solid rgb(255, 144, 162);
+}
+#login-btn {
+  background-color: white;
+  color: gray;
+}
+#login-btn:hover {
+  background-color: rgb(255, 144, 162);
+  color: white;
+}
+.center-landing-divs{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.landing1-div {
+  align-self: center;
+  border: 1px solid pink;
+  border-radius: 13%;
+  padding: 60px;
+  width: 75%;
+  height: 60vmin;
+}
+.landing1-heading {
+  font-size: 45px;
+}
+.landing1-heading2 {
+  font-size: 25px;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px 40px 10px
+}
+.landing-cards {
+  display: flex;
+  flex-direction: row;
+  margin-left: 1in;
+}
+.card {
+  margin: 10px;
+  width: 3in;
+  height: 4in;
+  border: 1px solid black;
+}

@@ -1,5 +1,14 @@
-button {
-  color: green;
+.website-btn {
+  font-size: 20px;
+  border: none;
+  padding: 10px;
+  margin: 10px;
+  background-color: #ffffff;
+  color: #727272;
+}
+.website-btn:hover {
+  color: #2b2b2b;
+  border-bottom: 2px solid #881b2c;
 }
 .story-div {
   align-self: center;

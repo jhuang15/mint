@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { todoList } from "../../utilities/todoList";
 import { useState } from 'react'
+import './DashboardPage.css';
 
 export default function DashboardPage() {
   const [list, setList] = React.useState(todoList);

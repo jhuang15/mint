@@ -1,33 +1,3 @@
-.btn-div {
-  display: flex;
-  justify-content: flex-end;
-  margin: 5px 20px 20px;
-}
-.button {
-  margin: 5px;
-  border-radius: 15%;
-  border: 1px solid pink;
-  padding: 10px 20px;
-  font-size: 14px;
-  cursor: pointer;
-}
-#signup-btn {
-  background-color: pink;
-  color: white;
-}
-#signup-btn:hover {
-  background-color: white;
-  color: rgb(41, 41, 41);
-  border: 1px solid rgb(255, 144, 162);
-}
-#login-btn {
-  background-color: white;
-  color: gray;
-}
-#login-btn:hover {
-  background-color: rgb(255, 144, 162);
-  color: white;
-}
 .modal {
   display: none;
   position: fixed;
@@ -82,11 +52,6 @@ input {
   font-size: 16px;
   color: white;
 }
-button:hover {
-  background-color: white;
-  color: rgb(41, 41, 41);
-  border: 1px solid rgb(255, 144, 162);
-}
 .close {
   color: #aaa;
   float: right;
@@ -98,75 +63,6 @@ button:hover {
   color: black;
   text-decoration: none;
   cursor: pointer;
-}
-.center-landing-divs{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-.landing1-div {
-  align-self: center;
-  border: 1px solid pink;
-  border-radius: 13%;
-  padding: 60px;
-  width: 75%;
-  height: 60vmin;
-}
-.landing1-heading {
-  font-size: 45px;
-}
-.landing1-heading2 {
-  font-size: 25px;
-  padding: 20px;
-  display: flex;
-  justify-content: flex-end;
-  margin: 10px 40px 10px
-}
-.landing-cards {
-  display: flex;
-  flex-direction: row;
-  margin-left: 1in;
-}
-.card {
-  margin: 10px;
-  width: 3in;
-  height: 4in;
-  border: 1px solid black;
-}
-.navbar-nav {
-  padding: 20px;
-  border-bottom: 1px solid blue;
-}
-.nav-div {
-  display: flex;
-  justify-content:space-between;
-  flex-direction: row;
-}
-.nav-div-left{
-  display: flex;
-  justify-self: center;
-}
-.nav-div-right {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-}
-.nav-link, .nav-welcome {
-  border-bottom: 2px solid white;
-  margin: 10px;
-  color: gray;
-  text-decoration: none;
-}
-.nav-welcome {
-  color: black;
-}
-#nav-logout {
-  display: flex;
-  justify-content: flex-end;
-}
-.nav-link:hover {
-  color:black;
-  border-bottom: 2px solid pink;
 }
 .container {
   display: flex;
@@ -200,53 +96,7 @@ button:hover {
   padding: 10px;
   margin: 5px;
 }
-.img-div {
-  background-color: #ffffff;
-  background-image: url("https://images.unsplash.com/photo-1543157145-f78c636d023d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1738&q=80");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  height: 100vmin;
-  border-radius: 25px;
-  margin-left: 15vmin;
-  margin-right: 15vmin;
-}
-.preview-container {
-  text-align: center;
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.preview-h1 {
-  font-size: 9vmin;
-  color: #9EAD93;
-}
-.preview-date-location {
-  color: #666666;
-  font-size: 4vmin;
-}
-.story-div {
-  align-self: center;
-  margin: 0vmin 20vmin 0vmin 20vmin;
-}
-.dashboard-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  
-}
-.dashboard-checkbox {
-  width: 70vmin;
-  padding: 10px;
-  margin: 5px;
-}
-.dashboard-expense {
-  width: 70vmin;
-  padding: 10px;
-  margin: 5px;
-}
+
 @media screen and (max-width: 100vmin) {
   .container {
     flex-direction: column;

@@ -2,6 +2,7 @@
 import SignUpForm from '../../components/SignUpForm/SignUpForm';
 import LoginForm from '../../components/LoginForm/LoginForm';
 import { useEffect } from 'react';
+import './LandingPage.css';
 
 export default function LandingPage({ setUser }) {
 
@@ -63,7 +64,7 @@ export default function LandingPage({ setUser }) {
           <p> review card</p>
         </div>
         </div>
-        <p className="lnading1-heading3">Take a peek..</p>
+        <p className="landing1-heading3">Take a peek..</p>
         <div className="landing-examples">
         <div className="left-div"> 
           <p> left div 1 </p>

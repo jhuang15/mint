@@ -1,0 +1,35 @@
+.navbar-nav {
+  padding: 20px;
+  border-bottom: 1px solid blue;
+}
+.nav-div {
+  display: flex;
+  justify-content:space-between;
+  flex-direction: row;
+}
+.nav-div-left{
+  display: flex;
+  justify-self: center;
+}
+.nav-div-right {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.nav-link, .nav-welcome {
+  border-bottom: 2px solid white;
+  margin: 10px;
+  color: gray;
+  text-decoration: none;
+}
+.nav-welcome {
+  color: black;
+}
+#nav-logout {
+  display: flex;
+  justify-content: flex-end;
+}
+.nav-link:hover {
+  color:black;
+  border-bottom: 2px solid pink;
+}

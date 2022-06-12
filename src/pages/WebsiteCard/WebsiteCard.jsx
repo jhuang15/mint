@@ -51,8 +51,8 @@ export default function WebsiteCard({website, handleDelete}) {
        </div>
        </div>
        <div className="story-div">
-       <button onClick={() => setShowPage(!showPage)}>Our Story </button>
-       <button onClick={() => setShowPage(!showPage)}>Photos </button>
+       <button className="website-btn" onClick={() => setShowPage(!showPage)}>Our Story </button>
+       <button className="website-btn" onClick={() => setShowPage(!showPage)}>Photos </button>
         { showPage ? 
           <WebsiteStory website={website}/>
           :
