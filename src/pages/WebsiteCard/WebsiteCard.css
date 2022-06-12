@@ -1,7 +1,7 @@
 main {
   margin: 0vmin 10vmin 10vmin 10vmin;
 }
-.website-btn {
+button {
   font-size: 18px;
   border: 2px solid #ffffff;
   padding: 15px;
@@ -9,13 +9,12 @@ main {
   background-color: #ffffff;
   color: #727272;
 }
-.website-btn:hover {
+button:hover {
   color: #2b2b2b;
   border-bottom: 2px solid #881b2c;
 }
 .story-div {
   align-self: center;
-  
 }
 .img-div {
   background-color: #ffffff;
@@ -41,4 +40,7 @@ main {
 .preview-date-location {
   color: #666666;
   font-size: 4vmin;
+}
+.link-div {
+  color: blue;
 }

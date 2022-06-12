@@ -18,17 +18,7 @@
   border: 1px solid #999;
   width: 60%;
 }
-h2,
-p {
-  margin: 0 0 20px;
-  font-weight: 400;
-  color: #999;
-}
-span {
-  color: #666;
-  display: block;
-  padding: 0 0 5px;
-}
+
 form {
   padding: 25px;
   margin: 25px;
