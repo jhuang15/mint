@@ -18,6 +18,31 @@
   border: 1px solid #999;
   width: 60%;
 }
+.button {
+  margin: 5px;
+  border-radius: 25px;
+  border: 1px solid #F2AD98;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+#signup-btn {
+  background-color: #F2AD98;
+  color: white;
+}
+#signup-btn:hover {
+  background-color: white;
+  color: #363636;
+  border: 1px solid #F2AD98;
+}
+#login-btn {
+  background-color: white;
+  color: gray;
+}
+#login-btn:hover {
+  background-color: #F2AD98;
+  color: white;
+}
 
 form {
   padding: 25px;
@@ -28,7 +53,7 @@ input {
   width: 90%;
   padding: 10px;
   margin-bottom: 20px;
-  border: 1px solid pink;
+  border: 1px solid #F3E3D5;
   border-radius: 15px;
   outline: none;
   font-size: 16px;
@@ -36,10 +61,14 @@ input {
 .submit-btn {
   width: 100%;
   padding: 10px;
-  border: 1px solid pink;
+  border: 1px solid #F2AD98;
   border-radius: 15px;
-  background-color: pink;
+  background-color: #ffffff;
   font-size: 16px;
+  color: #F2AD98;
+}
+.submit-btn:hover {
+  background-color: #F2AD98;
   color: white;
 }
 .close {
@@ -53,42 +82,4 @@ input {
   color: black;
   text-decoration: none;
   cursor: pointer;
-}
-.container {
-  display: flex;
-  flex-direction: row;
-}
-
-.website-form-container {
-  border: 1px solid red;
-}
-.website-home {
-  border: 1px solid orange;
-  margin: 10px;
-  padding: 10px;
-}
-.website-story {
-  border: 1px solid yellow;
-  padding: 10px;
-  margin: 5px;
-}
-#website-textarea {
-  width: 100%;
-  height: 300px;
-}
-.website-photos {
-  border: 1px solid green;
-  padding: 10px;
-  margin: 5px;
-}
-.website-rsvp {
-  border: 1px solid blue;
-  padding: 10px;
-  margin: 5px;
-}
-
-@media screen and (max-width: 100vmin) {
-  .container {
-    flex-direction: column;
-  }
 }

@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.website-form-container {
+  border: 3px solid #3f3f3f;
+}
+.website-story {
+  padding: 10px;
+  margin: 5px;
+}
+#website-textarea {
+  border: 1px solid #F3E3D5;
+  width: 100%;
+  height: 300px;
+}
+.website-photos {
+  padding: 10px;
+  margin: 5px;
+}
+.website-rsvp {
+  padding: 10px;
+  margin: 5px;
+}
+
+@media screen and (max-width: 100vmin) {
+  .container {
+    flex-direction: column;
+  }
+}

@@ -3,40 +3,19 @@
   justify-content: flex-end;
   margin: 5px 20px 20px;
 }
-.button {
-  margin: 5px;
-  border-radius: 15%;
-  border: 1px solid pink;
-  padding: 10px 20px;
-  font-size: 14px;
-  cursor: pointer;
-}
-#signup-btn {
-  background-color: pink;
-  color: white;
-}
-#signup-btn:hover {
-  background-color: white;
-  color: rgb(41, 41, 41);
-  border: 1px solid rgb(255, 144, 162);
-}
-#login-btn {
-  background-color: white;
-  color: gray;
-}
-#login-btn:hover {
-  background-color: rgb(255, 144, 162);
-  color: white;
-}
 .center-landing-divs{
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 .landing1-div {
+  background-image: url("https://images.unsplash.com/photo-1540845592734-17692f0f4584?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1486&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
   align-self: center;
-  border: 1px solid pink;
-  border-radius: 13%;
+  border-radius: 30px;
   padding: 60px;
   width: 75%;
   height: 60vmin;

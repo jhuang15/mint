@@ -1,7 +1,7 @@
 main {
   margin: 0vmin 10vmin 10vmin 10vmin;
 }
-button {
+#website-btn {
   font-size: 18px;
   border: 2px solid #ffffff;
   padding: 15px;
@@ -9,7 +9,7 @@ button {
   background-color: #ffffff;
   color: #727272;
 }
-button:hover {
+#website-btn:hover {
   color: #2b2b2b;
   border-bottom: 2px solid #881b2c;
 }
@@ -41,6 +41,30 @@ button:hover {
   color: #666666;
   font-size: 4vmin;
 }
+.link-and-reset {
+  display: flex;
+  justify-content: space-between;
+}
 .link-div {
-  color: blue;
+  border: 1px solid #2b2b2b;
+  border-radius: 25px;
+  margin: 10px 10px 2px 10px;
+  padding: 10px;
+}
+#copynpaste {
+  margin-top: 2px;
+  font-size: 12px;
+}
+.restartbtn {
+  background-color: #ffffff;
+  border: 1px solid #A12A35;
+  border-radius: 25px;
+  font-size: 15px;
+  padding: 5px 25px;
+  height: 40px;
+  margin: 10px
+}
+.restartbtn:hover {
+  background-color: #A12A35;
+  color: #ffffff;
 }
