@@ -9,7 +9,7 @@
   flex-direction: column;
 }
 .landing1-div {
-  background-image: url("https://images.unsplash.com/photo-1540845592734-17692f0f4584?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1486&q=80");
+  background-image: url("https://images.unsplash.com/photo-1540845692348-b9d2bc813a63?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2870&q=80");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -18,13 +18,15 @@
   border-radius: 30px;
   padding: 60px;
   width: 75%;
-  height: 60vmin;
+  
 }
 .landing1-heading {
   font-size: 45px;
+  color: #383838;
 }
 .landing1-heading2 {
   font-size: 25px;
+  font-weight: 300;
   padding: 20px;
   display: flex;
   justify-content: flex-end;
@@ -33,11 +35,48 @@
 .landing-cards {
   display: flex;
   flex-direction: row;
-  margin-left: 1in;
+  margin-left: 40px;
+  margin-right: 40px ;
 }
 .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 10px;
-  width: 3in;
-  height: 4in;
-  border: 1px solid black;
+  width: 63vmin;
+  height: 45vmin;
+  border: 2px solid #94AFBA;
+  border-radius: 25px;
+  box-shadow: 0 2px 5px #bdbdbd;
+}
+p {
+  font-weight: 100;
+  padding: 20px;
+}
+#signup-btn {
+  background-color: #CAA5AC;
+  border: 1px solid #CAA5AC;
+  color: white;
+}
+#signup-btn:hover {
+  background-color: #ffffff;
+  color: #383838;
+}
+#login-btn {
+  background-color: #ffffff;
+  border: 1px solid #CAA5AC;
+  color: #383838;
+}
+#login-btn:hover {
+  background-color: #CAA5AC;
+  color: white;
+}
+h3 {
+  margin-left: 20vmin;
+  font-weight: 200;
+}
+.mint-span {
+  font-size: 30px;
+  color: #94AFBA;
+  font-weight: 400;
 }

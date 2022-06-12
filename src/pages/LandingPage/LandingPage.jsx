@@ -46,22 +46,24 @@ export default function LandingPage({ setUser }) {
         <h3>
           made easy with <span className="mint-span">Mint</span>
         </h3>
-        <button className="button" id="login-btn" data-modal="modalOne">Sign Up</button>
+        <button className="button" id="signup-btn" data-modal="modalOne">Sign Up</button>
         <SignUpForm setUser={setUser} />
       </div>
         <p className="landing1-heading2">What are others saying about us?</p>
         <div className="landing-cards"> 
         <div className="card"> 
-          <p> review card</p>
+          <p> We love Mint! Made our whole wedding planning experience so quick and easy!! Can't recommend it enough!! Our wedding site looks so clean and minimalistic which goes with our aesthetics!<br /> --Mary & Peter
+</p>
         </div>
         <div className="card"> 
-          <p> review card</p>
+          <p>Great user interface. Very simple and easy to use <br /> --Sam & Kathy
+</p>
         </div>
         <div className="card"> 
-          <p> review card</p>
+          <p>This app made everything wedding planning easy. Super helpful, and has a really cute website theme! <br /> --April & June</p>
         </div>
         <div className="card"> 
-          <p> review card</p>
+          <p>Using The Mint made wedding planning so easy. We  highly recommend it to anyone thinking about getting married. <br /> --James & Calvin</p>
         </div>
         </div>
         <p className="landing1-heading3">Take a peek..</p>

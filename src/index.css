@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
 .modal {
   display: none;
   position: fixed;
@@ -16,37 +21,19 @@
   border-radius: 15px;
   margin: 50px auto;
   border: 1px solid #999;
-  width: 60%;
+  width: 30%;
 }
 .button {
   margin: 5px;
   border-radius: 25px;
-  border: 1px solid #F2AD98;
   padding: 10px 20px;
   font-size: 14px;
   cursor: pointer;
 }
-#signup-btn {
-  background-color: #F2AD98;
-  color: white;
-}
-#signup-btn:hover {
-  background-color: white;
-  color: #363636;
-  border: 1px solid #F2AD98;
-}
-#login-btn {
-  background-color: white;
-  color: gray;
-}
-#login-btn:hover {
-  background-color: #F2AD98;
-  color: white;
-}
 
 form {
   padding: 25px;
-  margin: 25px;
+  margin: 0px 25px 0px 25px;
   background-color: white;
 }
 input {
@@ -61,25 +48,27 @@ input {
 .submit-btn {
   width: 100%;
   padding: 10px;
-  border: 1px solid #F2AD98;
+  border: 1px solid #CAA5AC;
   border-radius: 15px;
   background-color: #ffffff;
   font-size: 16px;
-  color: #F2AD98;
+  color: #CAA5AC;
 }
 .submit-btn:hover {
-  background-color: #F2AD98;
+  background-color: #CAA5AC;
   color: white;
 }
 .close {
-  color: #aaa;
-  float: right;
+  display: flex;
+  justify-content: flex-end;
+  color: #969696;
   font-size: 28px;
   font-weight: bold;
+  margin-right: 15px;
 }
 .close:hover,
 .close:focus {
-  color: black;
+  color: #373737;
   text-decoration: none;
   cursor: pointer;
 }

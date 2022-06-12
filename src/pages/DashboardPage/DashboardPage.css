@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   flex-direction: row;
-  
 }
 .dashboard-checkbox {
   width: 70vmin;
