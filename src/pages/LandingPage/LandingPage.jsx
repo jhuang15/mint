@@ -38,6 +38,7 @@ export default function LandingPage({ setUser }) {
         <button className="button" id="login-btn" data-modal="modalTwo">Log In</button>
         <LoginForm setUser={setUser} />
       </div>
+    
       <div className="center-landing-divs">
       <div className="landing1-div"> 
         <h1 className="landing1-heading">
@@ -52,12 +53,10 @@ export default function LandingPage({ setUser }) {
         <p className="landing1-heading2">What are others saying about us?</p>
         <div className="landing-cards"> 
         <div className="card"> 
-          <p> We love Mint! Made our whole wedding planning experience so quick and easy!! Can't recommend it enough!! Our wedding site looks so clean and minimalistic which goes with our aesthetics!<br /> --Mary & Peter
-</p>
+          <p> We love Mint! Made our whole wedding planning experience so quick and easy!! Can't recommend it enough!! Our wedding site looks so clean and minimalistic which goes with our aesthetics!<br /> --Mary & Peter</p>
         </div>
         <div className="card"> 
-          <p>Great user interface. Very simple and easy to use <br /> --Sam & Kathy
-</p>
+          <p>Great user interface. Very simple and easy to use <br /> --Sam & Kathy</p>
         </div>
         <div className="card"> 
           <p>This app made everything wedding planning easy. Super helpful, and has a really cute website theme! <br /> --April & June</p>
@@ -66,19 +65,25 @@ export default function LandingPage({ setUser }) {
           <p>Using The Mint made wedding planning so easy. We  highly recommend it to anyone thinking about getting married. <br /> --James & Calvin</p>
         </div>
         </div>
-        <p className="landing1-heading3">Take a peek..</p>
+        <p className="landing1-heading2" id="left-peek">Take a peek..</p>
         <div className="landing-examples">
-        <div className="left-div"> 
+
+        <div className="div-row" id="top">
+        <div className="peek-div"> 
           <p> left div 1 </p>
         </div>
-        <div className="right-div"> 
+        <div className="peek-div"> 
           <p> right div 2</p>
         </div>
-        <div className="left-div"> 
+
+        </div>
+        <div className="div-row" id="bottom"> 
+        <div className="peek-div"> 
           <p> left div 3</p>
         </div>
-        <div className="right-div"> 
+        <div className="peek-div"> 
           <p> right div 4</p>
+        </div>
         </div>
         </div>
       </div>
