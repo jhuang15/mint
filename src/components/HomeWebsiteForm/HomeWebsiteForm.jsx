@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import * as websiteAPI from '../../utilities/website-api';
-//import {  useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 
   export default function HomeWebsiteForm({ setWebsite }) {
-    //const navigate = useNavigate();
+    const navigate = useNavigate();
     const [formData, setFormData] = useState ({
       name1: '',
       name2: '',
@@ -20,13 +20,14 @@ import * as websiteAPI from '../../utilities/website-api';
 
     async function handleSubmit(evt) {
       evt.preventDefault();
-      //navigate('/preview-website')
       try {
         const website = await websiteAPI.createWebsite(formData)
         setWebsite(website);
+        
       } catch {
         console.log('Website submit failed');
       }
+      navigate('/preview-website');
     }
 
     return (
