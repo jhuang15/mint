@@ -44,7 +44,7 @@ export default function LandingPage({ setUser }) {
         <h1 className="landing1-heading">
           We'll walk you through <br />every part of your planning 
         </h1>
-        <h3>
+        <h3 className="easy-h3">
           made easy with <span className="mint-span">Mint</span>
         </h3>
         <button className="button" id="signup-btn" data-modal="modalOne">Sign Up</button>
