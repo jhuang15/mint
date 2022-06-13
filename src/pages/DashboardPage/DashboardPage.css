@@ -16,7 +16,8 @@
   border: 2px solid #94AFBA;
   border-radius: 25px;
   box-shadow: 0 2px 5px #bdbdbd;
-  width: 70vmin;
+  width: 500px;
+  height: 200px;
   padding: 10px;
   margin: 50px;
 }
@@ -30,4 +31,12 @@ ul {
 }
 .checkbox {
   width: 30px;
+}
+.fake-data {
+  font-size: 40px;
+  margin: 10px;
+}
+.fake-data2 {
+  padding: 0px;
+  margin-left: -180px;
 }

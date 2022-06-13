@@ -46,6 +46,8 @@ export default function DashboardPage() {
         </div>
         <div className="dashboard-expense">
           <h2>$ Your Budget </h2>
+          <h3 className="fake-data">$5,000-$15,000</h3>
+          <p className="fake-data2">Estimated Cost</p>
         </div>
       </div>
     </div>
