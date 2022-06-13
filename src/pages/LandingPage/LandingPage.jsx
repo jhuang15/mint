@@ -63,27 +63,6 @@ export default function LandingPage({ setUser }) {
             <p>Using The Mint made wedding planning so easy. We  highly recommend it to anyone thinking about getting married. <br /> --James & Calvin</p>
           </div>
         </div>
-        <p className="landing1-heading2" id="left-peek">Take a peek..</p>
-        <div className="landing-examples">
-
-          <div className="div-row" id="top">
-            <div className="peek-div">
-              <p> left div 1 </p>
-            </div>
-            <div className="peek-div">
-              <p> right div 2</p>
-            </div>
-
-          </div>
-          <div className="div-row" id="bottom">
-            <div className="peek-div">
-              <p> left div 3</p>
-            </div>
-            <div className="peek-div">
-              <p> right div 4</p>
-            </div>
-          </div>
-        </div>
       </div>
     </main>
   );
