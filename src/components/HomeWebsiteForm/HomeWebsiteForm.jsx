@@ -5,6 +5,7 @@ import "./HomeWebsiteForm.css";
 
   export default function HomeWebsiteForm({ setWebsite }) {
     const navigate = useNavigate();
+    const [selectedImage, setSelectedImage] = useState(null);
     const [formData, setFormData] = useState ({
       name1: '',
       name2: '',
@@ -16,7 +17,8 @@ import "./HomeWebsiteForm.css";
     });
 
     function handleChange(evt) {
-      setFormData({ ...formData, [evt.target.name]:evt.target.value })
+      setFormData({ ...formData, [evt.target.name]:evt.target.value });
+      setSelectedImage(evt.target.files[0]);
     }
 
     async function handleSubmit(evt) {
@@ -47,10 +49,16 @@ import "./HomeWebsiteForm.css";
           <h3>Story</h3>
           <textarea id="website-textarea" name="story" type="text" value={formData.story} onChange={handleChange} placeholder="Tell your guests your story" />
         </div>
-
-            <div className="website-photos">
-              <h3>Photos</h3>
-              <p>Share photos with friends and family</p>
+          <div className="website-photos">
+            <h3>Photos</h3>
+            <p>Share photos with friends and family</p>
+            {selectedImage && (
+              <div>
+                <img alt="photo" width={"250px"} src={URL.createObjectURL(selectedImage)} />
+                <br />
+                <button onClick={()=>setSelectedImage(null)}>Remove</button>
+                </div>
+            )} 
               <input type="file" name="photos"  value={formData.photos} onChange={handleChange} />
             </div>
 

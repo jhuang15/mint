@@ -5,14 +5,20 @@
   flex-direction: row;
 }
 .dashboard-checkbox {
-  width: 70vmin;
+  border: 2px solid #94AFBA;
+  border-radius: 25px;
+  box-shadow: 0 2px 5px #bdbdbd;
+  width: 500px;
   padding: 10px;
-  margin: 5px;
+  margin: 50px;
 }
 .dashboard-expense {
+  border: 2px solid #94AFBA;
+  border-radius: 25px;
+  box-shadow: 0 2px 5px #bdbdbd;
   width: 70vmin;
   padding: 10px;
-  margin: 5px;
+  margin: 50px;
 }
 ul {
   list-style: none;

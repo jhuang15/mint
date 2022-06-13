@@ -21,7 +21,7 @@ export default function DashboardPage() {
     <div className="dashboard-container">
       <div className="dashboard-checkbox">
       <div>
-      <h2>Next On Your CheckList</h2>
+      <h2>&#8788; Next On Your CheckList</h2>
       <ul>
       {todoList.map(({ name}, index) => {
           return (
@@ -48,7 +48,7 @@ export default function DashboardPage() {
       </div>
 
       <div className="dashboard-expense">
-        <h2>Total up your expences</h2>
+        <h2>$ Your Budget </h2>
       </div>
     </div>
     </div>
