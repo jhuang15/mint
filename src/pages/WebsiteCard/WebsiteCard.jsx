@@ -32,8 +32,8 @@ export default function WebsiteCard({website, handleDelete}) {
           { showPage ? 
             <WebsiteStory website={website}/>
             :
-            // <WebsitePhotos website={website}/>
-            <WebsitePhotos />
+            <WebsitePhotos website={website}/>
+            
           } 
         </div>
       </main>
