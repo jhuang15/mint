@@ -33,8 +33,8 @@
 ![Github](https://img.shields.io/badge/-GitHub-333?style=flat&logo=github)
 ![VSCode](https://img.shields.io/badge/-VS_Code-333?style=flat&logo=visualstudio)
 
-<details>
 <h3>Links </h3>
+<details>
 <summary>Trello Board</summary>   
 <a href="https://trello.com/b/5ykEo1Iq/mint-wedding-event-planner">https://trello.com/b/5ykEo1Iq/mint-wedding-event-planner</a>   
 </details>
