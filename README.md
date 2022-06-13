@@ -26,6 +26,11 @@
 
 <h3>Getting Started </h3>
 <details>
+<summary>Wireframes</summary>   
+<a href="https://www.figma.com/file/1rvKcIJhxODHlOBVUE8unj/Project-4-Wireframe?node-id=0%3A1">https://www.figma.com/file/1rvKcIJhxODHlOBVUE8unj/Project-4-Wireframe?node-id=0%3A1</a>   
+</details>
+
+<details>
 <summary>Trello Board</summary>   
 <a href="https://trello.com/b/5ykEo1Iq/mint-wedding-event-planner">https://trello.com/b/5ykEo1Iq/mint-wedding-event-planner</a>   
 </details>
