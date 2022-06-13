@@ -18,13 +18,11 @@ import "./HomeWebsiteForm.css";
     function handleChange(evt) {
       setFormData({ ...formData, [evt.target.name]:evt.target.value });
     }
-
     async function handleSubmit(evt) {
       evt.preventDefault();
       try {
         const website = await websiteAPI.createWebsite(formData)
         setWebsite(website);
-        
       } catch {
         console.log('Website submit failed');
       }
@@ -33,26 +31,23 @@ import "./HomeWebsiteForm.css";
 
     return (
       <div className="container">
-      <div className="website-form-container">
-      <form onSubmit={handleSubmit}>
-        <div className="website-home">
-          <h3 className="form-h3">Home</h3>
-          <input type="text" name="name1" value={formData.name1} onChange={handleChange} placeholder="Your name:"/>
-          <input type="text" name="name2" value={formData.name2} onChange={handleChange} placeholder="Partner's name:" /> 
-          <input type="date" name="date" value={formData.date} onChange={handleChange} placeholder="Date of wedding:" />
-          <input type="text" name="location" value={formData.location} onChange={handleChange} placeholder="Location of venue:" />
-        </div>
-
-        <div className='website-story'>
-          <h3 className="form-h3">Story</h3>
-          <textarea id="website-textarea" name="story" type="text" value={formData.story} onChange={handleChange} placeholder="Tell your guests your story" />
-        </div>
-
-          <div className="website-photos">
-            <h3 className="form-h3">Photos</h3>
+        <div className="website-form-container">
+          <form onSubmit={handleSubmit}>
+            <div className="website-home">
+              <h3 className="form-h3">Home</h3>
+              <input type="text" name="name1" value={formData.name1} onChange={handleChange} placeholder="Your name:"/>
+              <input type="text" name="name2" value={formData.name2} onChange={handleChange} placeholder="Partner's name:" /> 
+              <input type="date" name="date" value={formData.date} onChange={handleChange} placeholder="Date of wedding:" />
+              <input type="text" name="location" value={formData.location} onChange={handleChange} placeholder="Location of venue:" />
+            </div>
+            <div className='website-story'>
+              <h3 className="form-h3">Story</h3>
+              <textarea id="website-textarea" name="story" type="text" value={formData.story} onChange={handleChange} placeholder="Tell your guests your story" />
+            </div>
+            <div className="website-photos">
+              <h3 className="form-h3">Photos</h3>
               <input type="file" name="photos" value={formData.photos} onChange={handleChange} /> 
             </div>
-
             <div className="website-rsvp" >
               <h3 className="form-h3">RSVP</h3>
               <p>This will show the user the guest list: accept/decline. Will not be displayed to guests</p>
@@ -64,8 +59,6 @@ import "./HomeWebsiteForm.css";
             <p>**Once form has been submitted, changes cannot be made.**</p>
           </form>
         </div>
-      
       </div>
-      
     );
   }

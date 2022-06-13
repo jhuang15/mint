@@ -16,7 +16,6 @@ function App() {
 
   return (
     <main className="App">
-      
       { user ?
         <>
         <NavBar user={user} setUser={setUser} />
@@ -30,13 +29,10 @@ function App() {
         </>
         :
         <Routes>
-
           <Route path="/" element={<LandingPage setUser={setUser}/>} />
           <Route path="/profile/:id" element={<ShareWebsite user={user} website={website}/>} />
         </Routes>
-        
       }
-
     </main>
   );
 }
