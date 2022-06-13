@@ -3,15 +3,6 @@
 <h1>Description</h1>
 <p>A web application that allows users to plan their wedding and build their wedding site.</p>
 <br>
-<div align="center">
-  <h3>Jenny Huang</h3>`                             
-  <a href="https://github.com/jhuang15"_target="_blank">
-  <img src="https://img.shields.io/badge/-Portfolio:_jhuang15.github.io-darkgreen?style=flat&logo=medium"/>
-  </a>
-  <a href="jchuang1020@gmail.com" target="_blank">
-    <img src="https://img.shields.io/badge/-jchuang1020@gmail.com-c14438?style=flat&logo=Gmail&``logoColor=white">
-  </a>
-</div>
 <h1>Screenshots</h1>
   <h3 align="center">Landing Page</h3><img src="https://i.imgur.com/HQJ5rd3.png"/>
   <h3 align="center">Log In Modal</h3><img src="https://i.imgur.com/JwBMnkX.png"/>
@@ -33,7 +24,7 @@
 ![Github](https://img.shields.io/badge/-GitHub-333?style=flat&logo=github)
 ![VSCode](https://img.shields.io/badge/-VS_Code-333?style=flat&logo=visualstudio)
 
-<h3>Links </h3>
+<h3>Getting Started </h3>
 <details>
 <summary>Trello Board</summary>   
 <a href="https://trello.com/b/5ykEo1Iq/mint-wedding-event-planner">https://trello.com/b/5ykEo1Iq/mint-wedding-event-planner</a>   
@@ -44,7 +35,7 @@
 <a href="https://mint-wedding.herokuapp.com/">https://mint-wedding.herokuapp.com/</a>
 </details>
 
-## Upcoming Features
+## Next Steps
 - [ ] Connect checkbox list to db   
 - [ ] Add and manage invited guest
 - [ ] Allow user's wedding guest to rsvp and add notes
