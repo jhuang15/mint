@@ -25,12 +25,12 @@ function App() {
           <Route path="/" element={<DashboardPage user={user} setUser={setUser}/>} />
           <Route path="/wedding-website" element={<WebsitePage />} />
           <Route path="/preview-website" element={<PreviewWebsitePage />} />
-          {/* <Route path="/profile/:id" element={<ShareWebsite user={user} website={website}/>} /> */}
+          <Route path="/profile/:id" element={<ShareWebsite user={user} website={website}/>} />
         </Routes>
         </>
         :
         <Routes>
-          {/* <LandingPage setUser={setUser} /> */}
+
           <Route path="/" element={<LandingPage setUser={setUser}/>} />
           <Route path="/profile/:id" element={<ShareWebsite user={user} website={website}/>} />
         </Routes>
