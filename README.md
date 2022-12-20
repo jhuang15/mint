@@ -36,8 +36,8 @@
 </details>
 
 <details open>   
-<summary>Deployed Link (Heroku)</summary>
-<a href="https://mint-wedding.herokuapp.com/">https://mint-wedding.herokuapp.com/</a>
+<summary>Deployed Link (Railway)</summary>
+<a href="https://mint.up.railway.app/">https://mint.up.railway.app/</a>
 </details>
 
 ## Next Steps
